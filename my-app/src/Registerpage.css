@@ -1,0 +1,110 @@
+/* Background styling */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: white; /* White background */
+}
+
+/* Form container */
+.register-form {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form title */
+.register-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Terms and conditions */
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.terms input {
+  margin-right: 8px;
+}
+
+/* Sign-up button */
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-form button:hover {
+  background: #0056b3;
+}
+
+/* Login link */
+.login-link {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .register-form {
+    padding: 25px;
+  }
+
+  .register-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .register-form button {
+    font-size: 1rem;
+  }
+}

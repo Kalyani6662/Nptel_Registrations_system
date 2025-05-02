@@ -1,0 +1,213 @@
+:root {
+  --primary-color: #4285f4;
+  --secondary-color: #34a853;
+  --accent-color: #ea4335;
+  --light-color: #f8f9fa;
+  --dark-color: #202124;
+  --gray-color: #5f6368;
+  --light-gray: #e8eaed;
+  --card-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+  --card-hover-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.courses-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.courses-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.courses-header h1 {
+  font-size: 2.5rem;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--gray-color);
+  margin-bottom: 1.5rem;
+}
+
+.search-bar {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 24px;
+  border: 1px solid var(--light-gray);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar:hover {
+  box-shadow: var(--card-hover-shadow);
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: #3367d6;
+}
+
+.category-selector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.category-selector button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid var(--light-gray);
+  background-color: white;
+  color: var(--gray-color);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.category-selector button:hover {
+  background-color: var(--light-gray);
+  color: var(--dark-color);
+}
+
+.category-selector button.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.course-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.course-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  border-bottom-left-radius: 8px;
+}
+
+.course-badge:not([class*="AICTE"]) {
+  background-color: var(--accent-color);
+}
+
+.course-content {
+  padding: 1.5rem;
+}
+
+.course-content h3 {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.institution {
+  color: var(--gray-color);
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+.course-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.enroll-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.enroll-button:hover {
+  background-color: #3367d6;
+}
+
+@media (max-width: 768px) {
+  .courses-header h1 {
+    font-size: 2rem;
+  }
+  
+  .course-list {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .category-selector {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+}

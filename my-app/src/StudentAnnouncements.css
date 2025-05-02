@@ -1,0 +1,124 @@
+.student-announcements-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .page-title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+  
+  .announcements-list {
+    margin-top: 30px;
+  }
+  
+  .announcement-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #4a90e2;
+  }
+  
+  .announcement-card.high {
+    border-left-color: #e74c3c;
+  }
+  
+  .announcement-card.medium {
+    border-left-color: #f39c12;
+  }
+  
+  .announcement-header {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .announcement-header h3 {
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  .announcement-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+  }
+  
+  .category, .priority, .author, .date {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+  }
+  
+  .category.general {
+    background-color: #e8f4fd;
+    color: #2980b9;
+  }
+  
+  .category.academic {
+    background-color: #e8f8f5;
+    color: #27ae60;
+  }
+  
+  .category.event {
+    background-color: #fef9e7;
+    color: #f39c12;
+  }
+  
+  .category.personal {
+    background-color: #f5e8fd;
+    color: #8e44ad;
+  }
+  
+  .priority.high {
+    background-color: #fdecea;
+    color: #e74c3c;
+  }
+  
+  .priority.medium {
+    background-color: #fff8e1;
+    color: #f39c12;
+  }
+  
+  .priority.low {
+    background-color: #e8f5e9;
+    color: #2ecc71;
+  }
+  
+  .author {
+    background-color: #f0f0f0;
+    color: #34495e;
+  }
+  
+  .announcement-content p {
+    margin: 0;
+    color: #34495e;
+    line-height: 1.6;
+  }
+  
+  .no-results, .loading {
+    text-align: center;
+    padding: 30px;
+    color: #7f8c8d;
+    font-style: italic;
+  }

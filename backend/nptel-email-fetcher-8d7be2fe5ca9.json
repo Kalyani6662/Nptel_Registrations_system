@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "nptel-email-fetcher",
+  "private_key_id": "8d7be2fe5ca95f48026db3be98ae6f1594c89599",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDpcDvHr4UIevAj\niRq8TX8hRiqVSDXty7LxID4DvL5NXJjJzscRvnovGj6lzAl6MPWmb1H3S+Kwt0sJ\n6z/Y4Ynls9HQhW++Q+yWDelHZ5qdQPI65d7ZydBVrVQxFulHWiL+xbD4JW9aK8bS\nTtiOwMRFK0l2IMgidqGOcv6CpRHbwioIUecnLTQbuU7RCIyO9r6yO2h/gT+LOiwc\nwh7yCUgG9rLoyk2KpOZqm0zYa3zd8aGvadJm/fhdNbbD92bM4AU+us+prpy7pEGX\npRQsal8WQAt+mrLYRXHBaEdD/f3zS1+eFkv+11ZOLDUmJ38Dsmwe4fM76LeeUtKW\neToZFqYzAgMBAAECggEAAKSkuNBh87YeDn1cH3ewQBDG7F/0aKuEJcf6seC0r4QN\n/9NlZgJSiry9GMzXUIyaZOQkCRyXJXFvIQzWX4Sfyps/uMOsaIWy+TJF2cK3scY3\nxKECJcmi/pFvLp+PCUTJ+10ueyLkNUOJjanlaucILM+NOEprmGIfsy0YG0vcmWkR\nvwgfaStIWw3ixKrbrQgJWZiJFKiWMxb15F4fF2qFn0MZtCrx9cQ/XzbHk9Xr9vEI\nhWUFY22TBCRjIKSqB2440vsdTp5v3akWiP+EEhsJadCDu9nVoEHuQbx/yhrXm/OJ\nZzlBLlOnn0yj5ywVYOoS5NT61HiJQBmzyuADbGzJdQKBgQD8bl474HNZ57Re2evw\nsTQg2S/MNvQs8Jt/S+wXqyegin8VHBeUcGAy6UrI2yrlcnK1maVYU5eUlbfl+I4Z\ng7iUVWP32VYv7xxJIQSDyoyfNaFOCR2N12K9CrU166pw1+byFrfiBnPlQAjBGlJU\nhSqkNWO5szecnsrBKHsKl3Zu9QKBgQDsvR/ep5017PPiIOzVZyeIj0XIYLVjy47Q\nISyIHsV+bOOrWO9CCgCzGdlWyguKJPuo90QuC1zrX+tFzhVoAbLcQMn8rg4YLOIZ\nnkuluj6CfxnlmUvYb4/eQsjB115Bto/V/rNeQxk+vvPAtSf+q4JsWJiESin5Rv1w\nux9Uym23hwKBgQCHrGpJlGFrOPXg5Q/C1ftGjHT8Na0XWlq5GH1UW1F5H/cdyXOC\n/MM3mdvwCJwNpm2w3VvZFVSrL60flXAKlplmYF7Sn6WLLeDuDSj4DK14BMMlxhB0\nZAdVw6ORz5BUBjbCdyNuADnaRYhvAU6uzsQUbf2jmYeSTmZ7Wt6G2tF04QKBgQDF\nyoFtAndrzYw52q5k4al7A9EWyA3k0faA16agF62DojBZQZWshDTvbmJSi742bg3A\nrs5M9fttQBeOm87wtbKdKJhZv4ZRFnbVVpb3YPLHDrAxTvG6ZAM8fGnE4k6C8qeb\n8BAmakMWVG3NDM3cjakLIr5SkLAe7/vhisVzjyk50wKBgAHtOGj9fBloTZ3HG4GR\nbqFTd4K0wyj7k/bkN9ey0RDNCnp5TXxMMQhzKmU+xj3AARjg+XYufZbjRG4sxtjH\nBI5Zysg2T5DnZbenaKvpffFBTKVWqoC72nv4SMAzNZGryGCWAMpEotsjo+7F6Nb8\nfWrLNTeLjkDKeJvieG/YHJel\n-----END PRIVATE KEY-----\n",
+  "client_email": "gmail-fetcher@nptel-email-fetcher.iam.gserviceaccount.com",
+  "client_id": "113700128147501812322",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gmail-fetcher%40nptel-email-fetcher.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

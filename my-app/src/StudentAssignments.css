@@ -1,0 +1,337 @@
+/* Main Container */
+.student-announcements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .page-title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  /* Controls */
+  .controls {
+    margin-bottom: 2rem;
+  }
+  
+  .search-filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-box {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .search-box input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .search-box input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7f8c8d;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .filter-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #bdc3c7;
+  }
+  
+  .filter-buttons button.active {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  /* Alerts */
+  .alert {
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  /* Loading State */
+  .loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #7f8c8d;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Announcements List */
+  .announcements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .announcement-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-left: 4px solid #3498db;
+  }
+  
+  .announcement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .announcement-card.high {
+    border-left-color: #e74c3c;
+  }
+  
+  .announcement-card.medium {
+    border-left-color: #f39c12;
+  }
+  
+  .announcement-card.low {
+    border-left-color: #2ecc71;
+  }
+  
+  .announcement-header {
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .announcement-header:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .announcement-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .announcement-title h3 {
+    margin: 0;
+    flex-grow: 1;
+    color: #2c3e50;
+    font-size: 1.2rem;
+  }
+  
+  .category-icon {
+    font-size: 1.2rem;
+  }
+  
+  .priority-icon {
+    font-size: 1rem;
+  }
+  
+  .announcement-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+  }
+  
+  .category, .priority, .date, .author {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .category {
+    background-color: #e8f4fc;
+    color: #2980b9;
+  }
+  
+  .priority {
+    font-weight: 600;
+  }
+  
+  .priority.high {
+    color: #e74c3c;
+  }
+  
+  .priority.medium {
+    color: #f39c12;
+  }
+  
+  .priority.low {
+    color: #2ecc71;
+  }
+  
+  .date {
+    background-color: #f0f0f0;
+  }
+  
+  .author {
+    background-color: #f5f5f5;
+  }
+  
+  .expand-icon {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  .announcement-content {
+    padding: 0 1.25rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  
+  .announcement-card.expanded .announcement-content {
+    max-height: 500px;
+    padding: 0 1.25rem 1.25rem;
+  }
+  
+  .announcement-content p {
+    margin: 0;
+    color: #34495e;
+    line-height: 1.6;
+  }
+  
+  .announcement-footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+  }
+  
+  .announcement-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .target-students {
+    word-break: break-word;
+  }
+  
+  .created-at {
+    font-style: italic;
+  }
+  
+  /* No Results */
+  .no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: #7f8c8d;
+  }
+  
+  .no-results img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+  }
+  
+  .no-results p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .no-results button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .no-results button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .announcements-list {
+      grid-template-columns: 1fr;
+    }
+    
+    .filter-buttons {
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+      justify-content: flex-start;
+    }
+    
+    .filter-buttons button {
+      flex-shrink: 0;
+    }
+  }
